@@ -7,11 +7,15 @@ lv1 = {
     text = {
         {
             location = 1000,
-            text = "jump over the spikes"
+            text = "jump over the spikes (space)"
         },
         {
             location = 2500,
             text = "feeling a bit slow? try BOOSTS(tm)!"
+        },
+        {
+            location = 6000,
+            text = "boosts are fun, right? well..."
         }
     },
     finish = 7000
@@ -118,7 +122,36 @@ lv4 = {
     finish = 7000
 }
 
-levels = {lv1, lv2, lv3, lv4}
+lv5 = {
+    spikes = {1000, 2000, 2150, 2300, 2450, 2600, 2750, 2900, 3050, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000},
+    boosts = {1400, 1450, 1500, 1550, 1600},
+    required_boosts = 0,
+    text = {
+        {
+            location = 400,
+            text = "level 5."
+        },
+        {
+            location = 1200,
+            text = "try and get as few of these boosts as possible. more will only make it harder."
+        },
+        {
+            location = 2700,
+            text = "good luck..."
+        },
+        {
+            location = 3700,
+            text = "isn't it funny how your opinion's changed?\nyou used to think boosts were super cool, but now you wish you had none..."
+        },
+        {
+            location = 4500,
+            text = "this level's too hard even for me. I only beat it once. good job!"
+        },
+    },
+    finish = 5000
+}
+
+levels = {lv1, lv2, lv3, lv4, lv5}
 lv_id = 0
 
 for i, level in ipairs(levels) do
