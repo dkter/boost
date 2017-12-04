@@ -39,7 +39,7 @@ end
 function love.update(dt)
     map.x = map.x + char.speed
 
-    if love.keyboard.isDown('space') then
+    if love.keyboard.isDown('space') or love.keyboard.isDown('up') then
         if char.y_vel == 0 then
             char.y_vel = char.jump_height
         end
