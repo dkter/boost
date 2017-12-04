@@ -45,9 +45,9 @@ function love.update(dt)
         end
     end
 
-    if love.keyboard.isDown('6') then
-        lv_id = 6
-        currentLevel = lv6
+    if love.keyboard.isDown('8') then
+        lv_id = 8
+        currentLevel = lv_end
     end
 
     if char.y_vel ~= 0 then
@@ -93,10 +93,14 @@ function love.draw()
         end
     end
 
+    if lv_id == 8 then
+        char.speed = 0
+        char.jump_height = 0
+    end
+
     -- boost HUD
     num_boosts = (char.speed - 2) / 2
-    if lv_id > 2 then
-        
+    if lv_id > 2 and currentLevel ~= lv_end then
         love.graphics.setFont(big_font)
         love.graphics.print(string.format("boosts: %d/%d", num_boosts, currentLevel.required_boosts), 100, 10, 0)
     end

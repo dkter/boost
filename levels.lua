@@ -200,7 +200,70 @@ lv6 = {
     finish = 13000
 }
 
-levels = {lv1, lv2, lv3, lv4, lv5, lv6}
+lv7 = {
+    spikes = {1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000,
+              10400, 10450, 10500, 10550, 10600, 10650, 10700, 10750, 10800},
+    boosts = {10100, 10150, 10200, 10250, 10300, 10350},
+    required_boosts = 0,
+    text = {
+        {
+            location = 200,
+            text = "level 7."
+        },
+        {
+            location = 1000,
+            text = "why do we always start with this same spike?"
+        },
+        {
+            location = 2000,
+            text = "i don't know. i guess you could call it an icon of this game"
+        },
+        {
+            location = 3000,
+            text = "this is pretty nice, isn't it? no boosts for a change..."
+        },
+        {
+            location = 4000,
+            text = "on the other hand, these spikes are looking a little small for your big clunky square body"
+        },
+        {
+            location = 5000,
+            text = "and you're getting a bit bored"
+        },
+        {
+            location = 6000,
+            text = "you've been here a while"
+        },
+        {
+            location = 7000,
+            text = "travelling at the same speed..."
+        },
+        {
+            location = 8000,
+            text = "jumping over the same spikes..."
+        },
+        {
+            location = 9000,
+            text = "over, and over, and over..."
+        }
+    },
+    finish = 13000
+}
+
+lv_end = {
+    spikes = {200},
+    boosts = {300},
+    required_boosts = 0,
+    text = {
+        {
+            location = 200,
+            text = "to be continued..."
+        }
+    },
+    finish = 13000
+}
+
+levels = {lv1, lv2, lv3, lv4, lv5, lv6, lv7, lv_end}
 lv_id = 0
 
 for i, level in ipairs(levels) do
