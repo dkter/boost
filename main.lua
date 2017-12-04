@@ -45,9 +45,9 @@ function love.update(dt)
         end
     end
 
-    if love.keyboard.isDown('5') then
-        lv_id = 5
-        currentLevel = lv5
+    if love.keyboard.isDown('6') then
+        lv_id = 6
+        currentLevel = lv6
     end
 
     if char.y_vel ~= 0 then

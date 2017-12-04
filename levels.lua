@@ -151,7 +151,56 @@ lv5 = {
     finish = 5000
 }
 
-levels = {lv1, lv2, lv3, lv4, lv5}
+lv6 = {
+    spikes = {1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10100},
+    boosts = {1500, 2500, 3500, 4500, 5500, 6500, 7500, 8700, 9900, 12000},
+    required_boosts = 10,
+    text = {
+        {
+            location = 400,
+            text = "level 6."
+        },
+        {
+            location = 1200,
+            text = "if you're waiting for me to introduce a magical new powerup that un-boosts you,\ndon't get your hopes up. it's not happening."
+        },
+        {
+            location = 2700,
+            text = "btw there are exactly 10 boosts on this level. the minimum is 10."
+        },
+        {
+            location = 3700,
+            text = "so you can't skip any boosts. you have to get every one."
+        },
+        {
+            location = 4500,
+            text = "stressful, isn't it?"
+        },
+        {
+            location = 5500,
+            text = "keep going!"
+        },
+        {
+            location = 6500,
+            text = "the font on this game is lato light, btw. it's really nice."
+        },
+        {
+            location = 7500,
+            text = "is \"overboosted\" a word? can I add it to the dictionary?"
+        },
+        {
+            location = 8500,
+            text = "this is hard, but it's also pretty fun, don't you think?"
+        },
+        {
+            location = 9500,
+            text = "oh, how could I have forgotten? the secret cheat code is k9xHG0s2d25"
+        }
+    },
+    finish = 13000
+}
+
+levels = {lv1, lv2, lv3, lv4, lv5, lv6}
 lv_id = 0
 
 for i, level in ipairs(levels) do
